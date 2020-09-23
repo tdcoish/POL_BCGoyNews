@@ -1,0 +1,89 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Style the header */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar{
+    overflow: hidden; /* Hide Overflow */
+    background-color: #333; /* Dark background color */
+}
+
+.navbar a {
+    float: left; /* Making sure links stay side by side */
+    display: block; /* Change display to block, for responsive reasons */
+    color: white;  /* text */
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; /* removes underline */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black;
+}
+
+
+/* Better way to do it, have all the content in a wrapper in the center */
+
+.mainWrapper{
+    background-color: rgb(230,230,230);
+}
+
+.mainContent{
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    border: 2px solid grey;
+}
+
+.newsPreview{
+    border: 2px solid grey;
+}
+
+.newsPreview:hover{
+    background-color: rgb(220,220,220);
+    cursor: pointer;
+}
+
+.storyPreviewImageWrapper{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    border: 2px solid black;
+}
+.storyPreviewImage{
+    display: block;
+    margin: auto;
+}
+
+.storyPreviewWordsWrapper{
+    display:inline-block;
+    width: 70%;
+}
+
+.storyPreviewWords{
+    font-family: Comic Sans;
+    color: black;
+    font-size: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+

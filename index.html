@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<!-- Note, found out totally by accident, but you can hit ctrl+k+u to get the raw source for a web page. -->
+
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bcgk_homepageCSS.css" rel = "stylesheet" type = "text/css">
+        
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"> -->
+        <!-- I guess that for my actual css I have to link it on the server that way? -->
+
+    </head>
+    <body>
+        <div class = "header">
+            <h1>BC Goy News</h1>
+            <p>British Columbia's No 1 trusted news source.</p>
+        </div>
+
+        <div class = "navbar">
+            <a href="#"> News </a>
+            <a href="#"> Events </a>
+        </div>
+
+        <!-- Contains picture for story, title, and little blurb -->
+        <div class = "mainWrapper">
+            <div class = "mainContent" onclick="location.href='https://duckduckgo.com/';">
+                <div class="newsPreview">
+                    <div class="storyPreviewImageWrapper">
+                        <img class="storyPreviewImage" src="Images/redditLogo.png">
+                    </div>
+                    <div class="storyPreviewWordsWrapper">
+                        <div class="storyPreviewWords">
+                            <h2>
+                                Tales from International Finance Capital.
+                            </h2>
+                            <p>
+                                It's all the peasants fault.
+                            </p>
+                        </div>
+
+                     </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class = "mainWrapper">
+            <div class = "mainContent">
+                <div class="newsPreview">
+                    <a href="https://duckduckgo.com/">
+                        <div class="storyPreviewImageWrapper">
+                            <img class="storyPreviewImage" src="Images/redditLogo.png">
+                        </div>
+                        <div class="storyPreviewWordsWrapper">
+                            <div class="storyPreviewWords">
+                                <h2>
+                                    Obese Brown Whale Heroicly Confronts Hitler Worshipper
+                                </h2>
+                                <p>
+                                    Get her some krill and a medal.
+                                </p>
+                            </div>
+    
+                         </div>
+                    
+                    </a>
+                </div>
+            </div> 
+        </div>
+
+
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+
+        <script>
+            function fClickNews(){
+                document.getElementsByClassName("newsPreview").window.location = "google.com";
+            }
+        </script>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

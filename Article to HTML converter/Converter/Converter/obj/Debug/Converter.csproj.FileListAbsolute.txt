@@ -1,0 +1,7 @@
+C:\Programming\BCGoyNews\POL_BCGoyNews\Article to HTML converter\Converter\Converter\bin\Debug\Converter.exe.config
+C:\Programming\BCGoyNews\POL_BCGoyNews\Article to HTML converter\Converter\Converter\bin\Debug\Converter.exe
+C:\Programming\BCGoyNews\POL_BCGoyNews\Article to HTML converter\Converter\Converter\bin\Debug\Converter.pdb
+C:\Programming\BCGoyNews\POL_BCGoyNews\Article to HTML converter\Converter\Converter\obj\Debug\Converter.csprojResolveAssemblyReference.cache
+C:\Programming\BCGoyNews\POL_BCGoyNews\Article to HTML converter\Converter\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+C:\Programming\BCGoyNews\POL_BCGoyNews\Article to HTML converter\Converter\Converter\obj\Debug\Converter.exe
+C:\Programming\BCGoyNews\POL_BCGoyNews\Article to HTML converter\Converter\Converter\obj\Debug\Converter.pdb
