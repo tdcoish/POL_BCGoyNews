@@ -8,7 +8,7 @@
 
     </head>
 
-    <body>
+    <body onload="formatArticleText()">
         <div class = "header">
             <h1>BC Goy News</h1>
             <p>British Columbia's No 1 trusted news source.</p>
@@ -24,19 +24,35 @@
                 <h1 id="articleTitle">UBC Cuckservative Resigns</h1>
 
                 <div class="articleContent">
-                    https://www.straight.com/education/michael-korenberg-resigns-as-chair-of-ubc-board-of-governors-after-he-likes-a-tweet-by <br>
-                    Note: This is an old story I wrote a few months back. It is still very relevant.<br>
-                    <p>As always, I wouldn't bother reading enemy propaganda. There is a similar article on the CBC website.</p>
-                    <p>
-                    Michael Korenberg was a basic bitch Trump Supporter, who even went so far as to show up to work in a MAGA hat, at UBC of all places. He got fired for liking a Dinesh D'Souza tweet. Now Dinesh D'Souza is basically the worst thing ever, who constantly tells white people that "DEMONrats are the real defenders of white people. Look at all these DEMONrats who are the party of slavery. You should cheer for DEMONrat Andrew Jackson's statue coming down."</p>
-                    <p>Okay those aren't actually direct quotes, but the point is he's basically cancer. Anyone who likes D'Souza is beyond useless, which is probably why they could have a job at UBC in the first place. Regardless, he's been replaced with an outright anti-white named Sandra Cawley who says things like, "The Board of Governors and Mr. Korenberg would like to recognize that this has been deeply hurtful to members of our community and that UBC has zero tolerance for racism and recognizes that real harm is created from both overt and structural racism". </p>
-                    <p>Ultimately Korenberg wasn't our guy, even in the slightest. What he does show how absolutely worthless the Korenbergs of the world really are. This is a guy who made it to the UBC Board of Governers Chair position, a quite powerful position where you basically are the equivalent of a mayor for the UBC endowment, an area with a populace of 10,000 people as well as obviously being the location of the most important university in BC. Did this guy use his position to do anything for us? Of course not, and when they asked him to resign because he liked some MAGA-tier tweets he whimpered and agreed. Pathetic.</p>
-                    <p>I have said for a long time that we are better off without people like this in our movement, and I think this shows why. If this is the fight they will put up to save their own jobs, they aren't going to do shit for any of us.</p>
+                    https://www.straight.com/education/michael-korenberg-resigns-as-chair-of-ubc-board-of-governors-after-he-likes-a-tweet-by
+                    Note: This is an old story I wrote a few months back. It is still very relevant.
+                    As always, I wouldn't bother reading enemy propaganda. There is a similar article on the CBC website.
+                    Michael Korenberg was a basic bitch Trump Supporter, who even went so far as to show up to work in a MAGA hat, at UBC of all places. He got fired for liking a Dinesh D'Souza tweet. Now Dinesh D'Souza is basically the worst thing ever, who constantly tells white people that "DEMONrats are the real defenders of white people. Look at all these DEMONrats who are the party of slavery. You should cheer for DEMONrat Andrew Jackson's statue coming down."
+                    Okay those aren't actually direct quotes, but the point is he's basically cancer. Anyone who likes D'Souza is beyond useless, which is probably why they could have a job at UBC in the first place. Regardless, he's been replaced with an outright anti-white named Sandra Cawley who says things like, "The Board of Governors and Mr. Korenberg would like to recognize that this has been deeply hurtful to members of our community and that UBC has zero tolerance for racism and recognizes that real harm is created from both overt and structural racism". 
+                    Ultimately Korenberg wasn't our guy, even in the slightest. What he does show how absolutely worthless the Korenbergs of the world really are. This is a guy who made it to the UBC Board of Governers Chair position, a quite powerful position where you basically are the equivalent of a mayor for the UBC endowment, an area with a populace of 10,000 people as well as obviously being the location of the most important university in BC. Did this guy use his position to do anything for us? Of course not, and when they asked him to resign because he liked some MAGA-tier tweets he whimpered and agreed. Pathetic.
+                    I have said for a long time that we are better off without people like this in our movement, and I think this shows why. If this is the fight they will put up to save their own jobs, they aren't going to do shit for any of us.
 
                 </div>
             </div>
         </div>
 
+        <script>
+            function formatArticleText(){
+                var articleContent = document.getElementsByClassName("articleContent");
+                var articleRawTextString = articleContent[0].innerHTML;
+                // console.log(articleRawTextString);
+                for(var i=0; i<articleRawTextString.length; i++)
+                {
+                    if(articleRawTextString[i] == '\n'){
+                        articleRawTextString = articleRawTextString.slice(0, i) + "<br><br>" + articleRawTextString.slice(i);
+                        i+=8;   
+                    }
+                }
+                console.log(articleRawTextString);
+
+                articleContent[0].innerHTML = articleRawTextString;
+            }
+        </script>
     </body>
 
 </html>
