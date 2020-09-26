@@ -4,6 +4,10 @@ body {
     background-color: rgb(230,230,230);
 }
 
+p {
+    line-height: 1;
+}
+
 .header{
     padding: 80px;
     text-align: center;
@@ -39,6 +43,10 @@ body {
     width: 50%;
     background-color: white;
     border: 2px solid grey;
+}
+
+.quotation{
+    font-style: italic;
 }
 
 #articleTitle{
