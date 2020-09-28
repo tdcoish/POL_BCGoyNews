@@ -67,6 +67,8 @@ figcaption{
 }
 
 .articleSnippet{
-    padding: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-style: italic;
 }

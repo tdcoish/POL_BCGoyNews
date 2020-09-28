@@ -13,6 +13,10 @@ function formatArticleText(){
 
     articleRawTextString = articleRawTextString.replace(/\n/g, "<br><br>");
 
+    articleRawTextString = articleRawTextString.replace(/<br><br><br><br>/g, "<br><br>");
+
+    console.log(articleRawTextString);
+
     // using the global find replace now.
     articleRawTextString = articleRawTextString.replace(/TDC_ARTICLE_START/g, "<div class=\"articleSnippet\">");
     articleRawTextString = articleRawTextString.replace(/TDC_ARTICLE_STOP/g, "</div>");
