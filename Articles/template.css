@@ -12,6 +12,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 figcaption{
@@ -25,6 +27,17 @@ figcaption{
     text-align: center;
     background: #1abc9c;
     color: white;
+}
+.header, a:link{
+    text-decoration: none;
+}
+.header, a:visited{
+    text-decoration: none;
+}
+
+.header:hover{
+    background-color: rgb(132, 238, 215);
+    cursor: pointer;
 }
 
 .navbar{
@@ -45,6 +58,7 @@ figcaption{
     background-color: #ddd;
     color: black;
 }
+
 
 .mainWrapper{
     background-color: rgb(230,230,230);
@@ -67,8 +81,16 @@ figcaption{
 }
 
 .articleSnippet{
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-style: italic;
 }
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    .mainContent {
+      width: 95%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+

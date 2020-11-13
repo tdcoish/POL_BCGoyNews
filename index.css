@@ -4,6 +4,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.mainContent{
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    border: 2px solid grey;
+}
+
 /*Style the header */
 .header {
     padding: 80px;
@@ -41,13 +53,6 @@ body {
 
 .mainWrapper{
     background-color: rgb(230,230,230);
-}
-
-.mainContent{
-    margin: auto;
-    width: 50%;
-    background-color: white;
-    border: 2px solid grey;
 }
 
 .newsPreview{
@@ -109,4 +114,23 @@ body {
 
 .pagination a:hover:not(.active) {
     background-color: #ddd;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    .mainContent {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .storyPreviewImageWrapper{
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    .storyPreviewWordsWrapper{
+        display: block;
+        width: 100%;
+    }
+    .storyPreviewWords{
+        text-align: center;
+    }
 }
